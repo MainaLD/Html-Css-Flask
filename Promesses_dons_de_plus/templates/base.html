@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'donstyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'styleListeDon.css') }}">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style> 
+    <title>{% block title %} {% endblock %}</title>
+
+</head>
+
+<body>
+    <div class="barre_navigue">
+        <a href="{{ url_for('index') }}">Accueil</a>
+        <a href="{{ url_for('ajouterdon') }}">Page de dons</a>
+        <!-- <a href="{{ url_for('listerdons') }}">Liste des dons</a> -->
+        <a href="{{ url_for('identifier') }}">Identifiez-vous</a>
+    </div>
+    
+    <div id="logo">
+        <div id="logoGauche">
+            <a href="{{ url_for('index') }}">
+                <img id="imageLogo" src="{{ url_for('static', filename= 'logo.webp') }}" alt="Logo ECLAS">
+            </a>
+        </div>
+
+        <div id="logoDroit">
+            <p id="nomAsso1"><span class="delius gras rose">ECLAS</span></p>
+            <p id="nomAsso2"><span class="delius">Ensemble Contre L'amyotrophie Spinale de type 1</span></p>
+            <a id="lienAsso" class="Ubuntu italic reducPolice80 bleu centrer" href="https://eclas.fr/">eclas.fr</a>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %} {% endblock %} 
+    </div>
+
+</body>
+</html>

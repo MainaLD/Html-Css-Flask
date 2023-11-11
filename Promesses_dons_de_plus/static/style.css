@@ -1,0 +1,146 @@
+.delius{font-family: 'Delius', cursive;}
+.gras{font-weight: bold;}
+.bleu{color: #377EBE;}
+.mauve{color: #6D3A96;}
+.jaune{color: #F1B41D;}
+.rose{color: #F16498;}
+.vert{color: #61AC45;}
+.rouge{color: red;}
+.noir{color: black;}
+.suppSoulignement{text-decoration: none;}
+.centrer{text-align: center;}
+.espaceApres{
+    margin-top: 1.5em;
+    margin-bottom: 0.2em;
+}
+.souligne{text-decoration: underline;}
+.italic{font-style: italic;}
+.reducPolice80{font-size: 0.8em;}
+.textNumTel{
+    font-size: 0.6em;
+}
+
+body, label{ 
+    margin-inline: 1.4em;
+    text-align: justify;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0,95em;
+    background-image: url(../ressources/);
+}
+
+h1{
+    text-align: left;
+    background-color: transparent;
+    font-style: italic;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+    color: #377EBE;
+    clear: left;  
+}
+
+h2{font-size: 1.6em;}
+
+p{margin-top: 0.2em;
+    font-size: 0,9em;}
+
+li{font-size: 0.9em;}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#logoGauche{
+    display: flex-direction;
+    width:20%; 
+}
+
+#logoDroit{
+    text-align: center;
+    width:85%;
+    margin-right: 10%;
+}
+
+#nomAsso1{
+    margin: 2px;
+    font-size: 3em;
+    padding: 2px;
+}
+
+#nomAsso2{
+    margin: 0px; 
+    font-size: 1em;
+    padding: 2px;
+   
+}
+
+#lienAsso{
+    margin: 0px; 
+    text-align: center;
+    font-size: 1em;
+    padding: 2px;
+}
+
+table{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border:none;
+}
+
+
+
+td{
+    border: none;
+    text-align: center;
+}
+
+.boutonPromDon{
+    text-align: center;
+    margin: 1.5em;
+    display:block;
+    padding: 0.5em;
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background: #377EBE;
+}
+
+#imageLogo{
+    width: 7em;
+    height: 7em;
+}
+
+#imageNosMissions{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+}
+
+#imageBebes{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    height: 90%;
+}
+
+#imageNosActions{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+

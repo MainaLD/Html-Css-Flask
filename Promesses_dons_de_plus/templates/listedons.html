@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <h1>{% block title %} Liste des dons {% endblock %}</h1> 
+
+    <div class="noir reducPolice80 articleListDon ">
+        <table class="tableauListDon ">
+            <tr class="gras">
+                <td class="cellule ">Prénom et Nom</td>
+                <td class="cellule">Adresse</td>
+                <td class="cellule">Mail</td>
+                <td class="cellule">Somme don (€)</td>
+            </tr>
+            {% for don in don %}
+            <tr> 
+                <td class="cellule textg">{{ don['prenom'] }} {{ don['nom'] }}</td>
+                <td class="cellule textg">{{ don['adresse'] }}</td>
+                <td class="cellule textg">{{ don['mail'] }}</td>
+                <td class="cellule textd">{{ don['somme_promise'] }}€</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+    <div>
+
+        <p>
+            Somme total des dons : {{ sommehtml }}€
+    
+        </p>
+    </div>
+{% endblock %}

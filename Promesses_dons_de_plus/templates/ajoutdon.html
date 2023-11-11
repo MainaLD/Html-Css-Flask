@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <h1>{% block title %} Formulaire de promesse de don {% endblock %}</h1> 
+
+    <div> 
+        <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p>
+    </div>
+    <main id="pageContent" >
+        <form action="{{ url_for('add') }}" method="post">
+            <!-- Nom  Prénom et E-mail-->
+            <div>
+                <div class="espaceEntDiv">
+                    <label for="nom">Nom<span class="rouge">*</span> :</label>
+                    <input id="nom" type="text" name="nom" required>
+                </div>
+                <div class="espaceEntDiv"> 
+                    <label for="prenom">Prénom<span class="rouge">*</span> :</label>
+                    <input id="prenom" type="text" name="prenom" required>
+                </div>
+                <div class="espaceEntDiv">
+                    <label for="adresse">Adresse<span class="rouge">*</span> :</label>
+                    <input id="adresse" type="text" name="adresse" required>
+                </div>
+                <div class="espaceEntDiv">
+                    <label for="mail">Adresse E-mail<span class="rouge">*</span> :</label>
+                    <input id="email" type="email" name="mail" value="jean.dupont@..." required>
+                </div>
+                <div>
+
+            <!-- Numéro de téléphone -->
+            <div class="espaceEntDiv" id="champNumTelGen"> 
+                <div id="labelNumTel">
+                    <label for="numIndexTel">Numéro de téléphone<span class="rouge">*</span> :</label>
+                </div>
+                <div id="champIndexTel">
+                    <div>
+                        <input id="indexTel" type="text" name="indexTel" value="+33" required>
+                    </div>
+                    <div>
+                        <label for="indexTel" class="italic textNumTel">Indicatif pays</label>
+                    </div>
+                </div>
+                <div id="champNumTel">
+                    <div>
+                        <input id="numTel" type="text" name="numTel" required>
+                    </div>
+                    <div>
+                        <label for="numTel" class="italic textNumTel">Numéro de téléphone</label>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Montant du don -->
+            <div class="espaceEntDiv">
+                <label for="somme_promise">Montant<span class="rouge">*</span> :</label>
+                <input id="montant" type="number" name="somme_promise" value="20" required>
+                <label> Eur</label>
+            </div>
+
+            <div>
+                <label>Vôtre don vous coûtera <code>__</code>€ après les 66% de réduction d'impôts*</label>
+                
+            </div>
+          
+            <!-- Message -->
+            <div class="espaceEntDiv">
+                <div>
+                    <label for="message">Message :</label>
+                </div><div>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </div>
+            
+            <!-- j'accepte les termes et conditions -->
+            <div class="espaceEntDiv alignerGauche">
+                <input required type="checkbox" id="redoublant" name="redoublant" value="1"/>
+                <label for="reboublant">j'accepte les termes et conditions<span class="rouge">*</pan></label>
+                
+            </div>
+
+            <!-- bouton envoi -->
+            <div class="espaceEntDiv">
+                <input class="boutonPromDon gras yellow" type="submit" value="Soumettre">
+            </div>
+        </form>
+    </main>
+
+    <!-- Commentaire réduction fiscale -->
+    <div class="chapRedFiscale">
+        <p>
+            *<span class="italic reducPolice80">Selon les articles 200 et 238 bis du code général des impôts, vôtre don vous donne droit à une réduction fiscale.</span>
+        </p>
+        <p>
+            *<span class="italic reducPolice80"><span class="gras souligne">Particulier :</span> Vous pouvez bénéficier d'une réduction d'impôt égale à 66% du montant de votre don, dans la limite de 20% de votre revenu imposable.</span>
+        </p>
+    </div>
+
+{% endblock %} 
+

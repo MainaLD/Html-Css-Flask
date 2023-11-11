@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <h1 class="centrer">{% block title %} Merci {% endblock %}</h1> 
+
+    <p class="gras">Grace à vos dons ECLAS peut continuer d'aller plus loin aux côtés des familles et des professionnels. Merci !</p>
+
+    <img id="imageBebes" src="{{ url_for('static', filename= 'fond_ecran.jpg') }}" alt="nos bébés ECLAS">  
+{% endblock %}

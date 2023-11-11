@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p id="enhaut"></p>
+    <h1>{% block title %} Bienvenue sur la page de promesse de don pour {% endblock %}</h1>
+    
+    <div id="article">
+        <div id="tableau" class="bleu delius italic gras">
+            <table>
+                <tr>
+                    <td><a href="#presentation">Présentation d’ECLAS</a></td>
+                    <td><a href="#nosMission">Nos missions</a></td>
+                    <td><a href="#cestQuoiASI1">C’est quoi l'ASI1 ?</a></td>
+                    <td><a href="#nosActions">Nos actions</a></td>
+                </tr>
+            </table>
+        </div>
+
+    <div class="boutonPromDon">
+        <!-- bouton promesse de don -->
+        <a class="suppSoulignement gras noir" href="{{ url_for('ajouterdon') }}">Ma promesse de don</a>
+    </div>
+
+    <div>
+        <h2 class="centrer italic bleu">
+            Déjà {{ sommehtml }}€ de sommes promises, Merci
+    
+        </h2>
+    </div>
+    <!-- Chap présentation asso -->
+    <div>
+        <h2 id=presentation class="espaceApres"><a class="suppSoulignement delius rose" href="#enhaut">Présentation d’ECLAS</a></h2>
+        
+        <p>
+            <span class="gras",>ECLAS est une association dynamique et participative</span>, créée en 2013 pour répondre à la situation spécifique des familles confrontées à l’amyotrophie spinale de type 1.
+        </p>
+    </div>
+
+    <!-- chap nos missions -->
+    <div>
+        <h2 class="espaceApres" id="nosMission"><a class="suppSoulignement delius rose" href="#enhaut">Nos missions</a></h2>
+        <p>
+            L’association mise sur le <span class="gras">collectif, l’entraide et le partage d’expérience</span>, revendiquant l’importance d’avancer <span class="gras bleu">E</span><span class="gras mauve">N</span><span class="gras jaune">S</span><span class="gras rose">E</span><span class="gras vert">M</span><span class="gras bleu">B</span><span class="gras mauve">L</span><span class="gras vert">E</span> !
+        </p>
+             
+        <p>Nos missions ?</p>
+        <ul>
+            <li><span class="gras rose">Faire connaître</span> l’amyotrophie spinale infantile de type 1</li>
+            <li>Faire <span class="gras rose">changer le regard</span> sur cette maladie</li>
+            <li>Mettre en place un <span class="gras rose">partage d’expérience</span> au bénéfice des familles et professionnels de santé</li>
+            <li>Permettre une prise en <span class="gras rose">charge médicale précoce, globale et de qualité</span> pour tous les enfants atteints</li>
+            <li><span class="gras rose">Accompagner et soutenir</span> les familles</li>
+            <li><span class="gras rose">Encourager des initiatives</span> de recherches sur cette maladie et la participation aux essais cliniques</li>
+            <li><span class="gras rose">Développer les contacts</span> et partages d’expérience avec les associations dédiées à la SMA à l’international</li>
+        </ul>
+        
+        <p class="italic">Plus d'information : <a href="https://eclas.fr/qui-sommes-nous/">https://eclas.fr/qui-sommes-nous/</a></p>
+        <img id="imageNosMissions" src="{{ url_for('static', filename= 'nos-missions.webp') }}" alt="nos ressources">
+
+    </div>
+
+    
+    <!-- Chap la maladie -->
+    <div id="fondMaladie">
+        <h2 id="cestQuoiASI1" class="espaceApres"><a class="suppSoulignement delius rose" href="#enhaut">L’amyotrophie spinale de type 1, c’est quoi ?</a></h2>
+        
+        <p><span class="gras">L’amyotrophie spinale de type 1</span> (ASI1 ou SMA1) est aussi appelée maladie de Werdnig Hoffmann. C’est une <span class="gras">maladie héréditaire, neuromusculaire et dégénérative qui affecte les nourrissons.</span></p>
+
+        <p>C’est la forme la plus sévère (avec le type dit « zéro ») d’un groupe de maladie qui comprend également les types 2 et 3. En France, on estime que cette maladie concerne entre 1/6000 et 1/10000 naissances par an tous types confondus, soit environ <span class="gras">120 nouveaux cas chaque année.</span> Dans 98 % des cas, les parents sont tous deux porteurs d’un même gène défectueux, comme une personne sur 40 dans la population.</p>
+        
+        <p>L’amyotrophie spinale de type 1 débute dans les premiers jours ou premiers mois de vie et se traduit par une faiblesse musculaire qui entraîne progressivement une <span class="gras">paralysie des membres</span>, une <span class="gras">insuffisance respiratoire chronique</span> associée à une toux inefficace, des <span class="gras">troubles de la succion</span> de la <span class="gras">déglutition</span> et de la <span class="gras">digestion. </span> L’intellect n’est pas affecté et <span class="gras">l’éveil</span> comme la <span class="gras">sociabilité</span> sont souvent exceptionnels.</p>
+        
+        <p>La maladie rend ces enfants très fragiles. Il y a encore quelques années, on estimait que la grande majorité des enfants décédaient avant l’âge de deux ans avec de grandes variabilités. Ces données statistiques sont en train d’évoluer positivement. Les premiers traitements sont aujourd’hui disponibles. Ils ne sont pas accessibles à tous les enfants (administration au cas par cas en fonction de l’état de santé notamment) mais sont porteurs d’espoir et permettent d’améliorer le sombre pronostic de l’ASI1.</p>
+        
+        <p class="italic">La FAQ (foire aux questions) : <a href="https://eclas.fr/la-maladie/">https://eclas.fr/la-maladie/</a></p>
+        <img id="imageBebes" src="{{ url_for('static', filename= 'fond_ecran.jpg') }}" alt="nos bébés ECLAS">       
+                
+    </div>
+    
+    <!-- Chap nos actions -->
+    <div>
+        <h2 id="nosActions" class="espaceApres"><a class="suppSoulignement delius rose" href="#enhaut">Nos actions :</a></h2>
+        
+        <p>Depuis sa création, ECLAS a mis en œuvre des actions pour répondre aux grandes priorités qui animent l’association au quotidien :</p>
+
+        <ul>
+            <li><span class="gras">Aider les familles</span> à <span class="gras">« vivre la maladie autrement</span> » et continuer à <span class="gras">avancer</span></li>
+            <li>Améliorer, toujours plus, la prise en charge des enfants en s’adaptant aux évolutions que permet la recherche</li>
+            <li><span class="gras">Faire connaître l’amyotrophie spinale de type 1</span>, maladie qui reste encore <span class="gras">largement méconnue</span> du grand public</li>
+        </ul>
+        <p>
+            De nombreux projets pleins de vie sont aussi mis en oeuvre. Ils se caractérisent aussi par leur diversité, leur ingéniosité et leur originalité. Ils sont <span class="gras">tous portés par les familles d’ECLAS</span> en fonction de leurs envies, de leurs parcours et de leurs savoir-faire… Découvrez nos actions par thème :
+        </p>        
+    </div>
+    
+    <ol>
+        <li class="gras delius bleu">Le dialogue des familles</li>
+        <li class="gras delius bleu">Pour l’éveil de bébé</li>
+        <li class="gras delius bleu">Pour le confort de bébé</li>
+        <li class="gras delius bleu">Pour la fratrie</li>
+        <li class="gras delius bleu">Auprès des pros</li>
+        <li class="gras delius bleu">Ensemble face aux deuils</li>
+    </ol>
+    <p  class="italic">Plus d'information : <a href="https://eclas.fr/nos-actions/">https://eclas.fr/nos-actions/</a></p>
+    <img id="imageNosActions" src="{{ url_for('static', filename= 'nos_actions.jpg') }}" alt="nos actions">       
+
+
+    <div class="boutonPromDon">
+        <!-- bouton promesse de don -->
+        <a class="suppSoulignement gras noir" href="{{ url_for('ajouterdon') }}">Ma promesse de don</a>
+    </div>
+    
+    <p class="italic reducPolice80">retout en <a href="#enhaut">haut</a></p>
+{% endblock %} 

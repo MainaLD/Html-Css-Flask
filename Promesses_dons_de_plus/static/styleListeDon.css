@@ -1,0 +1,19 @@
+.textg{text-align: left; }
+.textd{text-align: right; }
+
+.articleListDon{
+    flex-direction: row-reverse; 
+}
+
+.tableauListDon{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95;
+    border:none;
+    border-collapse: collapse
+}
+
+.cellule{
+    border: 1px solid black;
+}

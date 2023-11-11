@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Connexion {% endblock %}
+<!-- remplacé par contenu -->
+{% block content %} 
+    <h1>{{ droithtml }}</h1> 
+    <h2>Bienvenue : {{ nomhtml }}</h2>
+
+    {% if droithtml == 'administrateur' %}
+        <p>Vous êtes bien connecté</p>
+        <p>Voir la liste des dons : <a href="{{url_for('listerdons')}}">ici</a></p>
+    {% else %}
+        <p>vous n'avez pas les doits suffisants</p>
+    {% endif %}
+
+{% endblock %}

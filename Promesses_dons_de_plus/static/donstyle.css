@@ -1,0 +1,57 @@
+.espaceEntDiv{
+    margin:0.4em;
+    padding: 0.4em;
+}
+
+.alignerGauche
+
+input{
+    width: 40%;
+}
+
+form{
+    width: 80%;
+    margin-left: 2em;
+}
+
+#champNumTelGen{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#labelNumTel{
+    width:270px; 
+}
+
+#champIndexTel{
+    text-align: left;
+    width: 100px;
+}
+
+#champNumTel{
+    text-align: left;
+}
+
+
+
+#montant{
+    text-align: right;
+    width: 100px;
+}
+
+textarea{
+    width: 90%;
+    height: 70px;
+}
+
+#redoublant{width: 10px;}
+
+.chapRedFiscale{
+    margin:1em;
+    padding: 0.2em;
+}
+
+#pageContent{
+    width: 80%;
+}
