@@ -32,7 +32,7 @@ Option supplémentaire : un formulaire de login sur la page récapitulative des 
 <img src='./images_md/Connexion_admin.png' width='75%'>
 </br>
 
-## Installation 
+## Pré-requis 
 - Création d'un environnement :  ```$ pip install -r requirements.txt```
 - Exécution avec flask :  ```$ python -m flask run```
 
