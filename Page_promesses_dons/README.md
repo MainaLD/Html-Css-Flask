@@ -1,4 +1,4 @@
-# Une-page-de-promesse-de-don (Projet n°2)
+# Une page de promesses de dons (Brief n°2)
 Projet ayant pour objectif de créer une page web statique en utilisant HTML/CSS.
 
 ## Contexte du projet

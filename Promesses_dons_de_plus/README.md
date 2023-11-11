@@ -1,9 +1,9 @@
-# Pour quelques promesses de dons de plus (Projet n°6)
-Evolution du projet "Une-page-de-promesse-de-don" utilisant HTML/CSS, en intégrant le front dans un serveur web développé en Python.
+# Pour quelques promesses de dons de plus (Brief n°6)
+Evolution du projet "ne page de promesses de dons" utilisant HTML/CSS, en intégrant le front dans un serveur web développé en Python.
 
 
 ## Contexte du projet
-Le client est une association caritative souhaite une évolution de la [Page de promesse de dons](Page_promesses_dons). Elle aimerait que toutes les infos saisies dans les formulaires soient sauvegardées en base de données et qu'elles soient consultables par les responsables de l'association, toujours à partir du site web.
+Le client est une association caritative souhaite une évolution de la [Page de promesses de dons](Page_promesses_dons). Elle aimerait que toutes les infos saisies dans les formulaires soient sauvegardées en base de données et qu'elles soient consultables par les responsables de l'association, toujours à partir du site web.
 
 ## Maquette 
 Création de pages web en utilisant Python, Flask, MySQL, HTML/CSS :
@@ -28,7 +28,7 @@ Option supplémentaire : un formulaire de login sur la page récapitulative des 
 - 1 [page d'identification](./templates/identification.html) :</br>
 <img src='./images_md/Identification.png' width='75%'>
 </br>
-- 1 [page de connexion administrateur](./templates/identification.html) (accès avec le nom et prénom) : </br>
+- 1 [page de connexion administrateur](./templates/connexion.html) (accès avec le nom et prénom) : </br>
 <img src='./images_md/Connexion_admin.png' width='75%'>
 </br>
 
