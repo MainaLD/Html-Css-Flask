@@ -8,12 +8,13 @@ Projet ayant pour objectif de créer une page web statique en utilisant HTML/CSS
 </br>
 
 ## [Pour quelques promesses de dons de plus](Promesses_dons_de_plus/README.md) (Brief n°6)
-Evolution du projet "Une page de promesses de dons (Brief n°2)" utilisant HTML/CSS, en intégrant le front dans un serveur web développé en Python.</br>
+Evolution du projet "Une page de promesses de dons (Brief n°2)" utilisant HTML/CSS, en intégrant le front dans un serveur web développé en Python (Flask).</br>
 <img src='./Promesses_dons_de_plus/images_md/page_accueil.png' width='50%'></br>
 </br>
 
 
 ## [Breizhibus : Gestion des lignes de bus en ligne](https://github.com/MainaLD/Cahier-des-charges-Breizhibus-Brief10.git) (Brief n°10)
-Rédaction d'un cahier des charges pour la gestion de lignes de bus en ligne de Breizhibus, et création d'une application Flask.</br>
-<img src='./Promesses_dons_de_plus/images_md/page_accueil.png' width='50%'></br>
+Rédaction d'un cahier des charges pour la création du site de Breizhibus permettant la gestion des lignes de bus, en utilisant HTML/CSS et Flask pour le serveur.
+</br>
+<img src=https://github.com/MainaLD/Cahier-des-charges-Breizhibus-Brief10/blob/branche1/images_md/Lignes_bus.png width='50%'></br>
 </br>
