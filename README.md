@@ -2,12 +2,12 @@
 Sélection de Projets de pages web créées en utilisant HTML/CSS et Flask.</br>
 </br>
 
-## [Une page de promesses de dons](Page_promesses_dons/README.md) (Brief n°2)
+## [Une page de promesses de dons](B2_Page_promesses_dons/README.md) (Brief n°2)
 Projet ayant pour objectif de créer une page web statique en utilisant HTML/CSS.</br>
 <img src='./B2_Page_promesses_dons/images_md/page_accueil.png' width='50%'></br>
 </br>
 
-## [Pour quelques promesses de dons de plus](Promesses_dons_de_plus/README.md) (Brief n°6)
+## [Pour quelques promesses de dons de plus](B6_Pour_quelques_promesses_dons_de_plus/README.md) (Brief n°6)
 Evolution du projet "Une page de promesses de dons (Brief n°2)" utilisant HTML/CSS, en intégrant le front dans un serveur web développé en Python (Flask).</br>
 <img src='./B6_Pour_quelques_promesses_dons_de_plus/images_md/page_accueil.png' width='50%'></br>
 </br>
